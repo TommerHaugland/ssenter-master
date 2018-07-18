@@ -28,6 +28,21 @@ line-height: .8em;
 
 }
 
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.flex-item-asset {
+  margin: auto;
+}
+
+.flex-item-asset img {
+	width: 40vh;
+	height: auto;
+}
+
 .bulletpoints {
   padding-left: 25px;
 }
