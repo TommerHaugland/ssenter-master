@@ -28,6 +28,10 @@ line-height: .8em;
 
 }
 
+.localeimg {
+	width: 100%;
+}
+
 .flex-container {
   display: flex;
   flex-flow: row wrap;
@@ -189,6 +193,16 @@ footer {
 .pagination {
   margin-bottom: 30px;
 }
+
+/*Locale*/
+#locale-grid { overflow: auto; white-space: normal; }
+#locale-grid .profile { padding-bottom: 40px; }
+#locale-grid .panel { padding: 0 }
+#locale-grid .panel-body { padding: 15px }
+#locale-grid .profile-name { font-weight: bold; }
+#locale-grid .thumbnail {margin-bottom:6px;}
+#locale-grid .panel-thumbnail { overflow: hidden; }
+#locale-grid .img-rounded { border-radius: 4px 4px 0 0;}
 
 @media (min-width: 992px) {
 	body {
