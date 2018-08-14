@@ -60,6 +60,11 @@ line-height: .8em;
   border-radius: 50%;
 }
 
+.listingContainer {
+	width: 100%;
+	border-bottom: 1px solid #ebebeb;
+}
+
 .block-content {
   display: flex;
 flex-direction: column;
@@ -183,7 +188,7 @@ footer {
 }
 
 .empty_space {
-	padding-top: 200px;
+	padding-top: 54px;
 }
 
 .portfolio-item {
@@ -203,6 +208,13 @@ footer {
 #locale-grid .thumbnail {margin-bottom:6px;}
 #locale-grid .panel-thumbnail { overflow: hidden; }
 #locale-grid .img-rounded { border-radius: 4px 4px 0 0;}
+
+.listingAttributes {
+    width: 33%;
+    float: right;
+    table-layout: fixed;
+    font-size: 14px;
+}
 
 @media (min-width: 992px) {
 	body {
@@ -244,6 +256,41 @@ footer {
 		background-color: #2D2C82;
 		border-color: #17a2b8;
 	}
+
+	.lokalerimg {
+		height: 150px;
+		width: auto;
+
+	}
+
+	.listingAd {
+	padding: 15px 0;
+	border-bottom: 1px solid gray;
+	}
+
+	.listingContainer {
+		padding: 12px 0;
+		background-color: #fff;
+	}
+
+	.listingPhoto, .listingDescription, .listingLabels, .listingStats {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0 0 0 1rem;
+    float: none;
+    display: inline-block;
+    vertical-align: middle;
+    float: left;
+		width: 33%;
+}
+
+.listingPhoto {
+    width: 20%;
+    padding: 0;
+    max-height: 126px;
+    overflow: hidden;
+    float: left;
+
 }
 
 
