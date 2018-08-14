@@ -271,6 +271,7 @@ footer {
 	.listingContainer {
 		padding: 12px 0;
 		background-color: #fff;
+		overflow: hidden;
 	}
 
 	.listingPhoto, .listingDescription, .listingLabels, .listingStats {
@@ -282,6 +283,11 @@ footer {
     vertical-align: middle;
     float: left;
 		width: 33%;
+}
+
+span.propertyDescription {
+	display: inline-block;
+    width: 75%;
 }
 
 .listingPhoto {
