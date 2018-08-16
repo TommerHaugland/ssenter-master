@@ -3,6 +3,11 @@ body {
 	font-size: 18px;
 	line-height: 1.3;
 	padding-top: 54px;
+	display: flex;
+	flex-direction: column;
+}
+.content {
+  flex: 1 0 auto;
 }
 
 li {
@@ -133,6 +138,25 @@ iframe {
 	height: 300px !important;
 }
 
+
+footer {
+	position: relative;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   padding: 2rem 0;
+	 margin-top: 20vh;
+   background-color: #2D2C82;
+   text-align: center;
+	 color: white;
+	 flex-shrink: 0;
+}
+
+.footerinfo {
+	display: flex;
+	justify-content: space-evenly;
+}
+
 footer p {
 	padding-left: 15px;
 }
@@ -145,14 +169,11 @@ footer p {
 	font-size: 1.5rem;
 }
 
-footer {
-	width: 100%;
+
+.contact-center {
+	margin: auto;
 }
 
-.footerinfo {
-	display: flex;
-	justify-content: space-evenly;
-}
 
 .card {
 	height: 100%;
@@ -220,9 +241,36 @@ footer {
 	body {
 		padding-top: 54px;
 	}
+
+	#navbarResponsive {
+    overflow: hidden;
+	}
+
+	#navbarResponsive a {
+		float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-bottom: 3px solid transparent;
+		color: black;
+		text-transform: uppercase;
+	}
+
+	#navbarResponsive a:hover {
+		border-bottom: 3px solid #2d2c82;
+	}
+
+	#navbarResponsive a:active {
+		border-bottom: 3px solid #2d2c82;
+	}
+	.navbar-nav {
+		display: flex;
+		align-items: center;
+}
 	nav {
 		padding-top: 30px;
-		background-color: white;
 		font-family: 'Istok Web', sans-serif;
 	}
 
@@ -234,19 +282,15 @@ footer {
 		margin: 0 0 0 36px;
 		line-height: 1.6rem;
 	}
-	.navbar li a:hover {
+
+
+
+	/*.navbar li a:hover {
 		border-bottom: 4px solid #2d2c82;
 		color: #443525;
 		cursor: pointer;
 	}
-
-  .navbar li {
-
-  }
-	.nav-item a {
-		color: black;
-		text-transform: uppercase;
-	}
+*/
 	#findlocation {
 		margin: 0 70px;
 	}
@@ -260,7 +304,6 @@ footer {
 	.lokalerimg {
 		height: 150px;
 		width: auto;
-
 	}
 
 	.listingAd {
@@ -297,6 +340,56 @@ span.propertyDescription {
     overflow: hidden;
     float: left;
 
+}
+
+/*Contact form */
+input[type="text"], input[type="email"] {
+    font-size: 1.6rem;
+    color: #010100;
+    width: 100%;
+    line-height: 65px;
+    padding-left: 3rem;
+}
+select {
+    width: 100%;
+    height: 65px;
+    color: #010100;
+    padding-left: 3rem;
+}
+.h1, h1 {
+    font-size: 36px;
+}
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.text-white {
+    color: #fff!important;
+}
+.font-w400 {
+    font-weight: 400;
+}
+.padding-top-xl {
+    padding-top: 5rem!important;
+}
+.padding-bottom-xl {
+    padding-bottom: 5rem!important;
+}
+.margin-top-m {
+    margin-top: 3rem!important;
+}
+.margin-bottom-m {
+    margin-bottom: 3rem!important;
+}
+.section5 h2 {
+    line-height: 35px;
+}
+.section5 p {
+    font-size: 16px;
+    line-height: 26px;
+}
+.has-error input[type="text"], .has-error input[type="email"], .has-error select {
+    border: 1px solid #a94442;
 }
 
 

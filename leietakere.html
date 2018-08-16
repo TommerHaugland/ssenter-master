@@ -23,18 +23,13 @@
 		<!-- Navigation -->
 		<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 			<div class="container-fluid">
-				<a class="navbar-brand" href="#">
-						<img id="brand-image" alt="Website logo" src="./resources/images/logo.svg" />
-				</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
+				<a class="navbar-brand" href="./index.html"><img alt="Website logo" id="brand-image" src="./resources/images/logo.svg"></a> <button aria-controls="navbarResponsive"
+				aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarResponsive" data-toggle="collapse" type="button"><span class=
+				"navbar-toggler-icon"></span></button>
 				<div class="collapse navbar-collapse" id="navbarResponsive">
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item active">
-							<a class="nav-link" href="./index.html">Hjem
-								<span class="sr-only">(current)</span>
-							</a>
+							<a class="nav-link" href="./index.html">Hjem <span class="sr-only">(current)</span></a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="./omoss.html">Om oss</a>
@@ -48,13 +43,13 @@
 						<li class="nav-item">
 							<a class="nav-link" href="./kontakt.html">Kontakt</a>
 						</li>
-						<li id="findlocation">
-							<i class="fas fa-phone fa-2x"></i>
+						<li class="nav-item">
+							<form action="./lokaler.html" method="get" style="display: inline">
+								<button class="btn btn-info findlocation">Finn ledig lokal</button>
+							</form>
 						</li>
-						<li>
-							<a href="./lokaler.html">
-							<button type="button" class="btn btn-info findlocation">Finn ledig lokal</button>
-						</a>
+						<li class="nav-item">
+							<i class="fas fa-phone fa-2x"></i>
 						</li>
 					</ul>
 				</div>
@@ -226,7 +221,7 @@
 <!-- Footer -->
 <footer class="py-5 bg-dark">
 	<div class="container">
-		<p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+		<p class="m-0 text-center text-white">Kopibeskyttet &copy; Ådnekvam Eiendom</p>
 	</div>
 	<!-- /.container -->
 </footer>
