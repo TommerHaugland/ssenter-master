@@ -1,6 +1,6 @@
 // Dette er det første som skjer. Den gjør GET kall mot api, og kaller drawTable når dataen har kommet frem
 $.ajax({
-    url: 'http://tommerhaugland.com/ssenter-admin/api/locations',
+    url: 'https://admin.aasane-byggsenter.no/api/locations',
     type: "get",
     success: function(data, textStatus, jqXHR) {
         // Responsen (data) kommer inn automatisk som javascript objekt, og sendes bare videre
@@ -18,43 +18,48 @@ function drawListingContainer(data) {
 }
 
 function drawRow(rowData) {
-  var row = $("listingAd")
-
-  row.append($('<div class="row listingAd">'));
-  //The whole ad
-    row.append($('<div class="listingPhoto"><img alt="Lokaler" class="pull-left lokalerimg" src="' +    rowData.adImage + '"></div>'));
-    row.append($('<div class="listingDescription">'));
-      row.append($('<a href="#" title="Salhusveien 55, Nyborg"><span class="listingTitle">'+ rowData.title +'</span></a><br>'));
-      row.append($('<span class="propertyDescription">'+ rowData.description +'</span>'));
-    row.append($('</div>'));
-    //listingAttributes
-    row.append($('<table class="listingAttributes">'));
-      row.append($('<tbody>'));
-        row.append($('<tr>'));
-          row.append($('<td>Status:</td>'));
-          row.append($('<td>Ledig</td>'));
-        row.append($('</tr>'));
-        row.append($('<tr>'));
-          row.append($('<td>Pris:</td>'));
-          row.append($('<td>2127,- - /Kvm/Måned totalt leiekostnader per år 500000, felleskostnader tjohei</td>'));
-        row.append($('</tr>'));
-        row.append($('<tr>'));
-          row.append($('<td>Type:</td>'));
-          row.append($('<td>Kontor</td>'));
-        row.append($('</tr>'));
-        row.append($('<tr>'));
-          row.append($('<td>Ledig fra:</td>'));
-          row.append($('<td>01.05.2018</td>'));
-        row.append($('</tr>'));
-        row.append($('<tr>'));
-          row.append($('<td>Areal:</td>'));
-          row.append($('<td>14000 Kvadratmeter</td>'));
-        row.append($('</tr>'));
-      row.append($('</tbody>'));
-    row.append($('</table>'));
-  row.append($('</div>'));
-
- $("#listingRender").append(row);
-
-
- }
+    let html = '<div class="row listingAd">' +
+        '<div class="listingPhoto">' +
+        '<img alt="Lokaler" class="pull-left lokalerimg" src="./resources/images/header_image2.jpg">' +
+        '</div>' +
+        '<div class="listingDescription">' +
+        '<a href="#" title="Salhusveien 55, Nyborg"><span class="listingTitle">' + rowData.title + '</span></a>' +
+        '<br>' +
+        '<b>Nyborg, Åsane</b><br>' +
+        '<span class="propertyDescription">Beste lokasjon, beste folk og en annen placeholder som passer utmerket til lokaler i Åsane.</span>' +
+        '</div>' +
+        '<table class="listingAttributes">' +
+        '<tbody>' +
+        '<tr>' +
+        '<td>Status:</td>' +
+        '<td>Ledig</td>' +
+        '</tr>' +
+        '<tr>' +
+        '<td>Pris:</td>' +
+        '<td>2127,- - /Kvm/Måned</td>' +
+        '</tr>' +
+        '<tr>' +
+        '<td>Type:</td>' +
+        '<td>Kontor</td>' +
+        '</tr>' +
+        '<tr>' +
+        '<td>Sub-Type:</td>' +
+        '<td>Kontor, Detaljehandel</td>' +
+        '</tr>' +
+        '<tr>' +
+        '<td>Plasser:</td>' +
+        '<td>2 Plasser</td>' +
+        '</tr>' +
+        '<tr>' +
+        '<td>Ledig fra:</td>' +
+        '<td>01.05.2018</td>' +
+        '</tr>' +
+        '<tr>' +
+        '<td>Bygg str:</td>' +
+        '<td>14000 Kvadratmeter</td>' +
+        '</tr>' +
+        '</tbody>' +
+        '</table>' +
+        '</div>';
+    $("#listingRender").append($.parseHTML(html));
+}

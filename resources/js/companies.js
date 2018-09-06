@@ -2,7 +2,7 @@
 
 // Leietakere
 $.ajax({
-  url: 'https://admin.aasane-byggsenter.no/api/locations',
+  url: 'https://admin.aasane-byggsenter.no/api/companies',
   type: "get",
   success: function(data, textStatus, jqXHR) {
     drawCompanyTable(data);
@@ -16,27 +16,25 @@ function drawCompanyTable(data) {
 }
 
 function drawRow(rowData) {
-  var row = $("companyTable")
+let html = '<table class="table" id="companyTable">' +
+      '<thead>' +
+      '<tr>' +
+      '<th scope="col" onclick="sortTable(0)">Firma</th>' +
+      '<th scope="col" onclick="sortTable(1)">Bygg nr</th>' +
+      '<th scope="col">Nettsted</th>' +
+      '</tr>' +
+      '</thead>' +
+      '<tbody>' +
+      '<tr>' +
+      '<td scope="row">' + rowData.name + '</td>' +
+      '<td>' + rowData.buildingNumber + '</td>' +
+      '<td><a href="www.hkonglevoll.no">' + rowData.webpage + 'www.hkonglevoll.no</a></td>' +
+      '</tr>' +
+      '</tbody>' +
+      '</table>' +
+      '</div>' + '</div>' + '</div>';
 
-
-row.append($('<table class="table" id="companyTable">'));
-    row.append($('<thead>'));
-      row.append($('<tr>'));
-        row.append($('<th scope="col" onclick="sortTable(0)">Firma</th>'));
-        row.append($('<th scope="col" onclick="sortTable(1)">Bygg nr</th>'));
-      row.append($('<th scope="col">Nettsted</th>'));
-    row.append($('</tr>'));
-  row.append($('</thead>'));
-    row.append($('<tbody>'));
-      row.append($('<tr>'));
-      row.append($('<td scope="row">H. Konglevoll Transport AS</td>'));
-        row.append($('<td>1</td>'));
-        row.append($('<td><a href="www.hkonglevoll.no">www.hkonglevoll.no</a></td>'));
-      row.append($('</tr>'));
-    row.append($('</tbody>'));
-  row.append($('</table>'));
-
- $("#companyRender").append(row);
+    $("#companyRender").append($.parseHTML(html));
 
 
  }
