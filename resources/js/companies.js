@@ -16,15 +16,10 @@ function drawCompanyTable(data) {
 function drawRow(rowData) {
 
 let html =
-      '<table class="table" id="companyTable">' +
-      '<tbody>' +
-      '<tr>' +
-      '<td scope="row">' + rowData.name + '</td>' +
+      '<table class="table class="companyTable">' +
+      '<td>' + rowData.name + '</td>' +
       '<td>' + rowData.buildingNumber + '</td>' +
-      '<td><a href="">' + rowData.webpage + '</a></td>' +
-      '</tr>' +
-      '</tbody>' +
-      '</table>';
+      '<td><a href="">' + rowData.webpage + '</a></td>';
 
     $("#companyRender").append($.parseHTML(html));
 

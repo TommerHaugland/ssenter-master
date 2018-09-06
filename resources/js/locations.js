@@ -13,14 +13,16 @@ function drawListingContainer(data) {
 		// Her looper vi gjennom hvert lokale
     for (var i = 0; i < data.length; i++) {
     		// For hvert lokale blir en html tabell rad rendret
-        drawRow(data[i]);
+        if (data[i].available) {
+          drawRow(data[i]);
+        }
     }
 }
 
 function drawRow(rowData) {
     let html = '<div class="row listingAd">' +
         '<div class="listingPhoto">' +
-        '<img alt="Lokaler" class="pull-left lokalerimg" src="./resources/images/header_image2.jpg">' +
+        '<img alt="Lokaler" class="pull-left lokalerimg" src="'+ rowData.image + '">' +
         '</div>' +
         '<div class="listingDescription">' +
         '<a href="#" title="Salhusveien 55, Nyborg"><span class="listingTitle">' + rowData.title + '</span></a>' +
