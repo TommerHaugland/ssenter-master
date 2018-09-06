@@ -15,16 +15,8 @@ function drawCompanyTable(data) {
 
 function drawRow(rowData) {
 
-let html = '<table class="table" id="companyTable">' +
-      '<thead>' +
-      '<tr>' +
-      '<th scope="col" onclick="sortTable(0)">Firma</th>' +
-      '<th scope="col" onclick="sortTable(1)">Bygg nr</th>' +
-      '<th scope="col">Nettsted</th>' +
-      '</tr>' +
-      '</thead>' +
-      '<tbody>' +
-      '<tr>' +
+let html =
+      
       '<td scope="row">' + rowData.name + '</td>' +
       '<td>' + rowData.buildingNumber + '</td>' +
       '<td><a href="">' + rowData.webpage + '</a></td>' +
