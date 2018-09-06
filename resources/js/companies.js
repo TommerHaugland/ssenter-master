@@ -16,7 +16,7 @@ function drawCompanyTable(data) {
 function drawRow(rowData) {
 
 let html = '<table class="table" id="companyTable">' +
-    
+
       '<tbody>' +
       '<tr>' +
       '<td scope="row">' + rowData.name + '</td>' +
@@ -24,8 +24,7 @@ let html = '<table class="table" id="companyTable">' +
       '<td><a href="">' + rowData.webpage + '</a></td>' +
       '</tr>' +
       '</tbody>' +
-      '</table>' +
-      '</div>' + '</div>' + '</div>';
+      '</table>';
 
     $("#companyRender").append($.parseHTML(html));
 
