@@ -27,7 +27,7 @@ let html =
       '</table>';
 
     $("#companyRender").append($.parseHTML(html));
-    
+
 
 
 
