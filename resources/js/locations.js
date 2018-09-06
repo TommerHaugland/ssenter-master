@@ -36,19 +36,11 @@ function drawRow(rowData) {
         '</tr>' +
         '<tr>' +
         '<td>Pris:</td>' +
-        '<td>2127,- - /Kvm/Måned</td>' +
+        '<td>' + rowData.price + '/Kvm/Måned</td>' +
         '</tr>' +
         '<tr>' +
         '<td>Type:</td>' +
         '<td>Kontor</td>' +
-        '</tr>' +
-        '<tr>' +
-        '<td>Sub-Type:</td>' +
-        '<td>Kontor, Detaljehandel</td>' +
-        '</tr>' +
-        '<tr>' +
-        '<td>Plasser:</td>' +
-        '<td>2 Plasser</td>' +
         '</tr>' +
         '<tr>' +
         '<td>Ledig fra:</td>' +
@@ -56,7 +48,7 @@ function drawRow(rowData) {
         '</tr>' +
         '<tr>' +
         '<td>Bygg str:</td>' +
-        '<td>14000 Kvadratmeter</td>' +
+        '<td>' + rowData.squareMeters + '</td>' +
         '</tr>' +
         '</tbody>' +
         '</table>' +

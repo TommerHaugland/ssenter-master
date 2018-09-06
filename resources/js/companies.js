@@ -1,11 +1,9 @@
-
-
 // Leietakere
 $.ajax({
   url: 'https://admin.aasane-byggsenter.no/api/companies',
   type: "get",
   success: function(data, textStatus, jqXHR) {
-    drawCompanyTable(data);
+    drawCompanyTable(JSON.parse(data));
   }
 });
 
@@ -29,7 +27,7 @@ let html = '<table class="table" id="companyTable">' +
       '<tr>' +
       '<td scope="row">' + rowData.name + '</td>' +
       '<td>' + rowData.buildingNumber + '</td>' +
-      '<td><a href="www.hkonglevoll.no">' + rowData.webpage + 'www.hkonglevoll.no</a></td>' +
+      '<td><a href="">' + rowData.webpage + '</a></td>' +
       '</tr>' +
       '</tbody>' +
       '</table>' +
