@@ -16,6 +16,7 @@ function drawCompanyTable(data) {
 }
 
 function drawRow(rowData) {
+
 let html = '<table class="table" id="companyTable">' +
       '<thead>' +
       '<tr>' +

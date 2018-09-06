@@ -26,7 +26,7 @@ function drawRow(rowData) {
         '<a href="#" title="Salhusveien 55, Nyborg"><span class="listingTitle">' + rowData.title + '</span></a>' +
         '<br>' +
         '<b>Nyborg, Åsane</b><br>' +
-        '<span class="propertyDescription">Beste lokasjon, beste folk og en annen placeholder som passer utmerket til lokaler i Åsane.</span>' +
+        '<span class="propertyDescription">' + rowData.description + '</span>' +
         '</div>' +
         '<table class="listingAttributes">' +
         '<tbody>' +
