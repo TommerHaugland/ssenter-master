@@ -223,10 +223,7 @@ footer p {
 	font-size: 14px;
 }
 
-table tr {
-	display: flex;
-	text-align: center;
-}
+
 @media (min-width: 992px) {
 	body {
 		padding-top: 54px;
