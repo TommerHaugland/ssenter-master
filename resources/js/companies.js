@@ -15,8 +15,10 @@ function drawCompanyTable(data) {
 
 function drawRow(rowData) {
 
-let html =
-      
+let html = '<table class="table" id="companyTable">' +
+    
+      '<tbody>' +
+      '<tr>' +
       '<td scope="row">' + rowData.name + '</td>' +
       '<td>' + rowData.buildingNumber + '</td>' +
       '<td><a href="">' + rowData.webpage + '</a></td>' +
