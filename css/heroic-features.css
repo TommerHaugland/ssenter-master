@@ -2,7 +2,6 @@ body {
 	font-family: "gotham-web", sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 18px;
 	line-height: 1.3;
-	padding-top: 54px;
 	display: flex;
 	flex-direction: column;
 }
@@ -12,9 +11,78 @@ body {
 li {
 	list-style: none;
 }
+
 *:before, *:after {
 	box-sizing: border-box;
 }
+
+/***** Top menu *****/
+.fas {
+	color: #2D2C82;
+}
+.navbar li {
+	    margin: 0 15px 0 15px;
+}
+
+.navbar {
+    background: #444;
+    -o-transition: all .6s;
+    -moz-transition: all .6s;
+    -webkit-transition: all .6s;
+    -ms-transition: all .6s;
+    transition: all .6s;
+    backface-visibility: hidden;
+}
+
+.navbar.navbar-no-bg {
+    background: #444;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.navbar-dark .navbar-nav {
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+}
+ .nav-link {
+    color: #fff;
+    color: rgba(255, 255, 255, 0.8);
+    border: 0;
+		text-transform: uppercase;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus {
+    color: #fff;
+    outline: 0;
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.navbar-brand {
+    width: 105px;
+    background: url(../resources/images/logo.svg) left center no-repeat;
+    border: 0;
+    text-indent: -99999px;
+}
+
+.nav-link {
+	text-align: center;
+}
+
+a.nav-link.scroll-link {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+
 h1 {
 	font-weight: 400;
 	color: #2D2C82;
@@ -67,16 +135,9 @@ h1 {
 	margin-top: 10px;
 	line-height: 2rem;
 }
-#brand-image {
-	width: 150px;
-	height: auto;
-}
-#about {
-	padding-top: 70px;
-}
 .jumbotron {
 	background-color: #fff;
-	padding-top: none !important;
+	padding-top: 67px;
 }
 .jumbotron h1 {
 	padding-bottom: 15px;
@@ -141,6 +202,10 @@ footer p {
 .carousel {
 	display: none;
 }
+
+.btn-info {
+	background-color: #2D2C82;
+}
 .display-3 {
 	font-size: 1.5rem;
 }
@@ -173,7 +238,7 @@ footer p {
 	color: #85878c;
 }
 .empty_space {
-	padding-top: 54px;
+	padding-top: 74px;
 }
 .portfolio-item {
 	margin-bottom: 30px;
@@ -223,58 +288,64 @@ footer p {
 	font-size: 14px;
 }
 
+img.pull-left.lokalerimg {
+	max-width: 100%;
+}
+
+.btn-success {
+	background-color: #2D2C82 !important;
+}
 
 @media (min-width: 992px) {
-	body {
-		padding-top: 54px;
+	.navbar li {
+		    margin: 0 15px 0 15px;
 	}
-	#navbarResponsive {
-		overflow: hidden;
+
+	.navbar {
+	    background: #444;
+	    -o-transition: all .6s;
+	    -moz-transition: all .6s;
+	    -webkit-transition: all .6s;
+	    -ms-transition: all .6s;
+	    transition: all .6s;
+	    backface-visibility: hidden;
 	}
-	#navbarResponsive a {
-		float: left;
-		display: block;
-		text-align: center;
-		padding: 14px 16px;
-		text-decoration: none;
-		font-size: 17px;
-		border-bottom: 3px solid transparent;
-		color: black;
-		text-transform: uppercase;
+
+	.navbar.navbar-no-bg {
+	    background: #444;
+	    background: rgba(0, 0, 0, 0.2);
 	}
-	#navbarResponsive a:hover {
-		border-bottom: 3px solid #2d2c82;
+
+	.navbar-dark .navbar-nav {
+	    font-size: 15px;
+	    color: #fff;
+	    text-transform: uppercase;
 	}
-	#navbarResponsive a:active {
-		border-bottom: 3px solid #2d2c82;
+	 .nav-link {
+	    color: #fff;
+	    color: rgba(255, 255, 255, 0.8);
+	    border: 0;
+			text-transform: uppercase;
 	}
-	.navbar-nav {
-		display: flex;
-		align-items: center;
+
+	.navbar-dark .navbar-nav .nav-link:hover {
+	    color: #fff;
 	}
-	nav {
-		padding-top: 30px;
-		font-family: 'Istok Web', sans-serif;
+
+	.navbar-dark .navbar-nav .nav-link:focus {
+	    color: #fff;
+	    outline: 0;
+	}
+
+	.navbar-expand-md .navbar-nav .nav-link {
+	    padding-left: 1rem;
+	    padding-right: 1rem;
 	}
 	.carousel {
 		display: block;
+		margin-top: 67px;
 	}
-	.nav-item {
-		margin: 0 0 0 36px;
-		line-height: 1.6rem;
-	}
-	.nav-item a:last-child:hover {
-		border: none;
-	}
-	#findlocation {
-		margin: 0 70px;
-	}
-	.btn-info {
-		margin-right: 100px;
-		color: #fff;
-		background-color: #2D2C82;
-		border-color: #17a2b8;
-	}
+
 	.lokalerimg {
 		height: 150px;
 		width: auto;
@@ -314,12 +385,17 @@ footer p {
 	}
 	/*Contact form */
 	input[type="text"], input[type="email"] {
-		font-size: 1.6rem;
 		color: #010100;
 		width: 100%;
 		line-height: 45px;
 		padding-left: 1rem;
 	}
+
+	#contact-form {
+		display: flex;
+		justify-content: center;
+	}
+
 	select {
 		width: 100%;
 		height: 65px;
@@ -361,3 +437,68 @@ footer p {
 	.has-error input[type="text"], .has-error input[type="email"], .has-error select {
 		border: 1px solid #a94442;
 	}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+ .section-1-box .section-1-box-icon { width: 60px; height: 60px; font-size: 32px; line-height: 60px; }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+ .navbar-expand-md .navbar-nav .nav-link { padding-left: 0.6rem; padding-right: 0.6rem; }
+
+ .inner-bg { padding: 180px 0; }
+
+ .section-description p { padding: 0; }
+
+ .section-1-box .section-1-box-icon { width: 50px; height: 50px; font-size: 26px; line-height: 50px; }
+
+ .section-3-box .section-3-box-icon { width: 50px; height: 50px; font-size: 26px; line-height: 50px; }
+
+}
+
+@media (max-width: 767px) {
+
+ .navbar.navbar-no-bg { background: #444; }
+ .navbar-dark .navbar-toggler { border-color: #444; }
+ .navbar-dark .navbar-toggler:focus { background: #333; outline: 0; }
+ .navbar-expand-md .navbar-nav .nav-link { padding-top: 0.3rem; padding-bottom: 0.3rem; }
+
+ .inner-bg { padding: 100px 0 80px 0; }
+
+ .section-description p { padding: 0; }
+
+ .section-1-container { padding-bottom: 60px; }
+ .section-1-box { text-align: center; }
+ .section-1-box h3 { margin-top: 20px; padding-top: 10px; }
+
+ .section-3-box { text-align: center; }
+ .section-3-box h3 { margin-top: 20px; padding-top: 10px; }
+
+}
+
+@media (max-width: 415px) {
+
+ h1, h2 { font-size: 32px; }
+
+}
+
+
+/* Retina-ize images/icons */
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+ /* logo */
+	 .navbar-brand {
+		 background-image: url(../resources/images/logo.svg) !important; background-repeat: no-repeat !important; background-size: 105px 33px !important;
+	 }
+
+}
