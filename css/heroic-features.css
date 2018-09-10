@@ -72,8 +72,9 @@ li {
     text-indent: -99999px;
 }
 
-.nav-link {
+.nav-link, .nav-item {
 	text-align: center;
+	padding-top: 15px;
 }
 
 a.nav-link.scroll-link {
@@ -247,7 +248,7 @@ footer p {
 	margin-bottom: 30px;
 }
 .heading-locale {
-	padding-top: 45px;
+	padding-top: 75px;
 }
 .heading-locale h2 {
 	font-weight: bold;
