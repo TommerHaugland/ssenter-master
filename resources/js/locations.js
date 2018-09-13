@@ -21,15 +21,15 @@ function drawListingContainer(data) {
 
 function drawRow(rowData) {
     let html = '<div class="row listingAd">' +
-        '<div class="listingPhoto">' +
+        '<div class="listingPhoto col-md-3 sx-12">' +
         '<img alt="Lokaler" class="pull-left lokalerimg" src="'+ rowData.image + '">' +
-        '</div>' +
+        '</div>' + '<div class="col-md-4 sx-12">' +
         '<div class="listingDescription">' +
-        '<a href="#" title="Salhusveien 55, Nyborg"><span class="listingTitle">' + rowData.title + '</span></a>' +
+        '<span class="listingTitle">' + rowData.title + '</span>' +
         '<br>' +
-        '<b>Nyborg, Åsane</b><br>' +
-        '<span class="propertyDescription">' + rowData.description + '</span>' +
-        '</div>' +
+      //  '<b>Nyborg, Åsane</b><br>' +
+        '<span class="propertyDescription">' + rowData.description + '</span>' + '</div>' +'</div>'+
+        '<div class="col-md-4 sx-12">' +
         '<table class="listingAttributes">' +
         '<tbody>' +
         '<tr>' +
@@ -49,11 +49,11 @@ function drawRow(rowData) {
         '<td>01.05.2018</td>' +
         '</tr>' +
         '<tr>' +
-        '<td>Bygg str:</td>' +
+        '<td>Totalt kvadratmeter:</td>' +
         '<td>' + rowData.squareMeters + '</td>' +
         '</tr>' +
         '</tbody>' +
         '</table>' +
-        '</div>';
+        '</div>' + '</div>';
     $("#listingRender").append($.parseHTML(html));
 }

@@ -159,6 +159,10 @@ float: left;
 	line-height: 2rem;
 }
 
+.display-p {
+	padding-bottom: 15px;
+}
+
 .jumbotron {
 	background-color: #fff;
 	padding-top: 67px;
@@ -181,11 +185,19 @@ float: left;
 
 .btn-primary {
 	background-color: #2D2C82;
-	;
+
 	border-color: #2D2C82;
-	;
+
 }
 
+.listingAttributes tr {
+	font-size: 16px;
+}
+
+.listingTitle {
+	text-decoration: none;
+
+}
 
 .contact-info {
 	padding-top: 15px;
@@ -215,16 +227,15 @@ iframe {
 }
 
 footer {
-	position: relative;
-	right: 0;
-	bottom: 0;
-	left: 0;
+	display: flex;
+	align-items: left;
+	justify-content: center;
 	padding: 2rem 0;
 	margin-top: 20vh;
 	background-color: #2D2C82;
-	text-align: center;
 	color: white;
 	flex-shrink: 0;
+	font-size: 12px;
 }
 
 footer ul {
@@ -233,14 +244,7 @@ footer ul {
 	align-items: center;
 }
 
-.footerinfo {
-	display: flex;
-	justify-content: space-evenly;
-}
 
-footer p {
-	padding-left: 15px;
-}
 
 .carousel {
 	display: none;
@@ -349,10 +353,9 @@ footer p {
 }
 
 .listingAttributes {
-	width: 33%;
-	float: right;
-	table-layout: fixed;
-	font-size: 14px;
+    align-items: center;
+    margin: 15px 15px;
+    width: 100%;
 }
 
 img.pull-left.lokalerimg {
@@ -362,6 +365,8 @@ img.pull-left.lokalerimg {
 .btn-success {
 	background-color: #2D2C82 !important;
 }
+
+
 
 @media (min-width: 992px) {
 
@@ -447,27 +452,7 @@ align-items: center;
 		background-color: #fff;
 		overflow: hidden;
 	}
-	.listingPhoto, .listingDescription, .listingLabels, .listingStats {
-		box-sizing: border-box;
-		margin: 0;
-		padding: 0 0 0 1rem;
-		float: none;
-		display: inline-block;
-		vertical-align: middle;
-		float: left;
-		width: 33%;
-	}
-	span.propertyDescription {
-		display: inline-block;
-		width: 75%;
-	}
-	.listingPhoto {
-		width: 20%;
-		padding: 0;
-		max-height: 126px;
-		overflow: hidden;
-		float: left;
-	}
+
 	/*Contact form */
 	input[type="text"],
 	input[type="email"] {
@@ -544,6 +529,16 @@ font-weight: bold;
 		font-size: 32px;
 		line-height: 60px;
 	}
+
+	footer {
+		font-size: 18px;
+	}
+
+	span.listingTitle {
+		font-weight: bold;
+	}
+
+
 }
 
 
@@ -608,6 +603,12 @@ font-weight: bold;
 		.section-3-box h3 {
 			margin-top: 20px;
 			padding-top: 10px;
+		}
+
+		.listingAttributes {
+		    align-items: center;
+		    margin: 15px 15px;
+		    width: 33%;
 		}
 	}
 	@media (max-width: 415px) {

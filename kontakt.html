@@ -45,7 +45,7 @@
 					</li>
 					<li class="nav-item">
 						<form action="./lokaler.html" method="get" style="display: inline">
-							<button class="btn btn-info findlocation">Finn ledig lokal</button>
+							<button class="btn btn-info findlocation">Finn ledig lokale</button>
 						</form>
 					</li>
 					<li class="nav-item">
@@ -63,7 +63,7 @@
 			<h2>Kontakt oss</h2>
 			<p>Vi svarer fortløpende.</p>
 			<div class="contact-info">
-			<p>Ådnekvam Eiendom</p>
+			<p>Ådnekvam Eiendom AS</p>
 				<p>Salhusveien 55 </p>
 			<p>5131 NYBORG</p>
 			<p>Tlf: 92445721
@@ -124,7 +124,13 @@
                     <textarea id="form_message" name="message" class="form-control" placeholder="Din melding *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
                     <div class="help-block with-errors"></div>
                 </div>
+								<div class="form-group">
+                            <div class="g-recaptcha" data-sitekey="6LfPK3AUAAAAAJ2wxKFMcz23J8u80t3e5Kdn4Uth" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+                            <input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
+                            <div class="help-block with-errors"></div>
+                        </div>
             </div>
+
             <div class="col-md-12">
                 <input type="submit" class="btn btn-success btn-send" value="Send melding">
             </div>
@@ -163,6 +169,7 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
 	<script src="./resources/js/main.js"></script>
 	<script src="./resources/js/jquery.backstretch.min.js"></script>
 	<script src="./resources/js/wow.min.js"></script>
