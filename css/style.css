@@ -192,6 +192,7 @@ float: left;
 
 .listingAttributes tr {
 	font-size: 16px;
+	border-bottom: 1px solid #2D2C82;
 }
 
 .listingTitle {
@@ -354,8 +355,8 @@ footer ul {
 
 .listingAttributes {
     align-items: center;
-    margin: 15px 15px;
     width: 100%;
+		background: #f2f2f2;
 }
 
 img.pull-left.lokalerimg {
@@ -366,7 +367,9 @@ img.pull-left.lokalerimg {
 	background-color: #2D2C82 !important;
 }
 
-
+table tr {
+	cursor: pointer;
+}
 
 @media (min-width: 992px) {
 
@@ -434,7 +437,7 @@ align-items: center;
 	}
 	.carousel {
 		display: block;
-		margin-top: 67px;
+		margin-top: 65px;
 	}
 	.lokalerimg {
 		height: 150px;
@@ -565,8 +568,13 @@ font-weight: bold;
 			font-size: 26px;
 			line-height: 50px;
 		}
+
+		.listingAd {
+			border-bottom: 1px solid black;
+    margin-bottom: 15px;
+		}
 	}
-	@media (max-width: 767px) {
+	@media (min-width: 767px) {
 		.navbar.navbar-no-bg {
 			background: #444;
 		}
